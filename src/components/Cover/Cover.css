@@ -1,0 +1,60 @@
+@import url('https://fonts.cdnfonts.com/css/franklin-gothic-demi-cond');
+
+.cover-container {
+    height: 100vh;
+    object-fit:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.coverImg{
+    object-fit: cover;
+    height: 85vh;
+    position: absolute;
+    z-index: -2;
+
+}
+
+.linea1{
+    width: 105%;
+    left: -5%;
+    height: auto;
+    position: absolute;
+    z-index: -5;
+
+}
+
+.title-container > h1{
+    color: #000;
+    font-family: 'Franklin Gothic Demi Cond', sans-serif;
+    font-size: 500%;
+}
+
+@media (max-width: 920px){
+    .title-container  >h1{
+        font-size: 2rem;
+    }
+
+    .coverImg{
+        width: 95vw;
+        height: auto;
+    }
+
+    
+    .cover-container{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 620px){
+    .title-container >h1{
+        font-size: 1.5rem;
+    }
+
+    .cover-container{
+        height: 50vh;
+    }
+}

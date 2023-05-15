@@ -1,0 +1,47 @@
+.row{
+    height: 20rem;
+}
+.cardCol{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 16rem;
+}
+
+.card-img{
+    border-radius: 50%;
+    border: solid 3px #000;
+    height: 15rem;
+    cursor: pointer;
+}
+
+.card-img:hover{
+    opacity: .8;
+}
+
+
+.item-card{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:1120px){
+    .cardCol{
+        width: 10rem;
+    }
+
+    .card-img{
+        height: 9rem;
+    }
+}
+
+@media(max-width:800px){
+    .cardCol{
+        width: 8rem;
+    }
+
+    .card-img{
+        height: 7rem;
+    }
+}

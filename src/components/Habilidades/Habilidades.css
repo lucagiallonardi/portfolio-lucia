@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/franklin-gothic-medium-cond');
+
+.container{
+    height: 110vh;
+    
+}
+.habCover{
+        object-fit: cover;
+        width: 100%;
+        position: absolute;
+        z-index: -5;
+    }
+
+.hab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.retrato{
+    width: 25%;
+    padding-right: 3rem;
+    
+}
+
+.estudios{
+    font-family:'Brush Script MT';
+    font-size: 5rem;
+}
+.li1{
+    margin-top: 0 !important;
+}
+
+.lista{
+font-family: 'Franklin Gothic Medium Cond', sans-serif;
+color: #fff;
+font-size: 2rem;
+}
+
+.lista>li{
+    margin-top: 15%;
+}
+
+
+@media(max-width:1120px){
+    .lista{
+        font-size: 1.5rem;
+    }
+
+    .estudios{
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width:700px){
+
+    .hab{
+        padding-top:15% ;
+    }
+    .retrato{
+        padding-right: 00;
+    }
+
+    .lista>li{
+        margin-top: 10%;
+    }
+
+    .lista{
+        font-size: 1rem;
+    }
+    .estudios{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:500px){
+    .lista{
+        font-size: .5rem;
+    }
+    .estudios{
+        font-size: 1rem;
+    }
+}

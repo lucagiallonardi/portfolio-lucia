@@ -1,0 +1,140 @@
+@import url('https://fonts.cdnfonts.com/css/franklin-gothic-medium-cond');
+
+.navbarContainer{
+    font-family: 'Franklin Gothic Medium Cond', sans-serif;
+    height: 2rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    }
+    
+    .h2navBar{
+        color: #fff;
+    }
+
+    .links{
+        display: flex;
+        height: 100%;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        display: flex;
+    }
+
+    .nav-items{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .cuadro{
+        background-color: #000;
+        border: solid 1px #000;
+        border-bottom: none;
+        height: 98%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cuadro:hover{
+       background-color: #FFC9DB;
+       transition: all 0.3s ease-in;
+    }
+
+    .links-nav{
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    
+
+
+    @media (min-width: 768px){
+        .burger{
+            display: none;
+        }
+        
+    }
+
+    @media(max-width:768px){
+        .burger{
+            position: fixed;
+            margin-top: 50px;
+            right: 0;
+
+        }
+
+        .navbarContainer{
+            background-color: transparent;
+        }
+
+       .h2navBar{
+            display: none;
+        }
+        .links{
+        position: absolute;
+        right: 0%;
+        top: -700px;
+        left: -2000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        transition: all .5s ease;
+        }
+        a{
+            color: #fff;
+            font-size: 2rem;
+            display: block;
+            margin-top: 1rem;
+        }
+        .links.active{
+            width: 100%;
+            display: block;
+            position: fixed;
+            margin-left: auto;
+            margin-right: auto;
+            top: 15%;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .links-nav{
+            border: none;
+        }
+
+        .nav-items{
+            flex-direction: column;
+        }
+
+        .cuadro{
+            background-color: #6B1E38;
+            border: #6B1E38;
+        }
+        
+
+    .bgDiv.active{
+        top: 0%;
+        left: 0%;
+    }
+    }
+    .bgDiv{
+        position: fixed;
+        background-color: #6B1E38;
+        top:-1000px;
+        left: -1000px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 0 0 80% 0;
+        transition: all .6s ease;
+    }

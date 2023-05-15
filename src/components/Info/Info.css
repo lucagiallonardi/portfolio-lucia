@@ -1,0 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/franklin-gothic-medium-cond');
+
+.info-container{
+    width: 100%;
+    margin-top: 100px;
+    height: 15vh;
+    color: #fff;
+    background-color: #C46A88;
+}
+
+.info{
+    font-family: 'Franklin Gothic Medium Cond', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info>h1{
+    font-weight:200;
+}
+
+@media only screen and (max-width: 960px){
+    .info-container{
+        height: 25vh;
+        width: 100%;
+    }
+    .info >h1{
+        text-align: center;
+        font-size: 25px;
+    }
+}

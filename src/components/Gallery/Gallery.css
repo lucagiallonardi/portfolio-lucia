@@ -1,0 +1,61 @@
+.gallery{
+  padding-top: 20rem;
+}
+
+.coverProy{
+  max-width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.misProyectos{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.img-proy{
+  max-width: 50vw;
+}
+.gama-carousel{
+  padding: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 3rem;
+  color: #ff3175;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 3rem;
+  color: #ff3175;
+}
+
+@media(max-width:950px){
+  .gallery{
+    padding-top: 15rem;
+  }
+}
+
+@media(max-width:760px){
+  .gallery{
+    padding-top: 10rem;
+  }
+}
+
+@media(max-width:460px){
+  .gallery{
+    padding-top: 5rem;
+  }
+}
